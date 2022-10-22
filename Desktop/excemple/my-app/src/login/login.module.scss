@@ -13,16 +13,29 @@
 .block input{
     width: 220px;
     border-radius: 5px;
-    border-color: aquamarine;
+    border-color: rgb(127, 157, 255);
 }
 
 .block{
-    background-color: bisque;
+    background-color: rgba(9, 30, 77);
+    color: white;
+    min-height: 100vh;
+    .title{
+        font-size: larger;
+        margin-bottom: 10px;
+        color: rgb(116, 153, 233);
+    }
 }
 
 .button{
-    background-color: aquamarine;
+    background-color: white;
+    color: rgb(4, 34, 99);
     padding: 5px 10px;
     border-radius: 5px;
     box-shadow: 2px 2px #888888;
+    transition: 0.5s;
+}
+.button:hover{
+    background-color:rgb(110, 151, 238);
+    color: white;
 }

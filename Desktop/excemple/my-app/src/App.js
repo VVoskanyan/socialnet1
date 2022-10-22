@@ -1,11 +1,20 @@
 
 import './App.css';
-import Login from './login/Login';
-
+import { BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
+import List from './list/List';
+import ProfileContainer from './profile/ProfileContainer';
+import LoginContainer from './login/LoginContainer';
 function App() {
   return (
     <div className="App">
-      <Login/>
+      <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Navigate to="/login" />}/>
+            <Route  path="/login" element={<LoginContainer/>}/>
+            <Route  path="/profile" element={<ProfileContainer/>} />
+            <Route  path="/list" element={<List />}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

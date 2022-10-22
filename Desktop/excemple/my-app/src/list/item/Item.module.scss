@@ -1,0 +1,22 @@
+.block{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding:50px;
+    margin-bottom: 10px;
+    width: 400px;
+    border-radius: 20px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(36,115,179,1) 57%, rgba(0,212,255,1) 100%);
+    color: white;
+}
+.button{
+    color:rgb(2, 2, 66)
+}
+.label{
+    color:rgb(141, 196, 228);
+}
+.show,.content{display:none;}
+.show:checked~.content{display:block;}
+
+.show:checked~.text{display: none;}

@@ -1,0 +1,20 @@
+.block{
+    background-color: rgb(8, 64, 71);
+    color: aliceblue;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    margin-left: -185px;
+    margin-top: -100px;
+    padding: 100px;
+}
+
+.buttonNo{
+    color: rgba(72, 133, 247, 0.616);
+}
+.buttonYes{
+    color: rgb(0, 132, 255);
+}

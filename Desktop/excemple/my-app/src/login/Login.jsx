@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
+import { useNavigate } from 'react-router-dom';
 import styles from "./login.module.scss";
-export default function Login(){
+import {useDispatch} from 'react-redux';
+
+
+export default function Login({setPersonData}){
+    const dispatch = useDispatch();
     const {register, handleSubmit} = useForm();
+    const  navigate = useNavigate();
     function onSubmit(d){
-        console.log(JSON.stringify(d));
+        dispatch(setPersonData(d));
+        navigate("/profile");
     }
-    return (<div className = {styles.block}>
-        <h2> Login </h2>
+
+    return (<>
+    <div className = {styles.block}>
+        <h2 className = {styles.title}> Login </h2>
         <form className = {styles.form} onSubmit = {handleSubmit(onSubmit)}>
             <label>
                 First Name:
@@ -25,9 +34,11 @@ export default function Login(){
                 Current City:
                 <input {...register("currentCity")}/>
             </label>
-            <button className = {styles.button}>submit</button>
+            <button className = {styles.button}>
+                    sign up
+            </button>    
         </form>
-    </div>
-        
-    )
+
+        </div>      
+    </>)
 }

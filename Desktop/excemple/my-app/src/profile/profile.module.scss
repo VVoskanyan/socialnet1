@@ -1,0 +1,67 @@
+.pic{
+    width: 250px;
+    height: 300px;
+}
+
+.block{
+    display: flex;
+    gap: 20px;
+    background-color: rgb(4, 34, 99);
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+.title{
+    padding: 10px;
+    font-size: large;
+    margin-left:90px ;
+    color: rgb(116, 153, 233);
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+}
+.more{
+    color: rgb(116, 153, 233, 0.3);
+}
+.event{
+    color: rgb(116, 153, 233);
+}
+.link a{
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+}
+.edite{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 5px;
+    color: rgb(4, 34, 99);
+    max-height: 30px;
+}
+.edite:hover{
+    opacity: 0.8;
+}
+.form{
+    display: flex;
+    align-items:flex-end;
+    margin-bottom: 40px;
+
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    min-width: 150px;
+}
+
+.logout{
+    font-size: large;
+}

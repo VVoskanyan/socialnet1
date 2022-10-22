@@ -1,0 +1,25 @@
+.button{
+    background-color: rgb(4, 34, 99);
+    border-radius: 5px;
+    padding: 5px;
+    color: antiquewhite;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left: -50px;
+}
+.button:hover{
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.title{
+    font-size: larger;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
